@@ -13,6 +13,7 @@ import {
   Crosshair,
   Info,
 } from "lucide-react";
+import { getAssetPath } from "@/lib/utils";
 
 type ViewType = "front" | "side" | "three_quarter" | "back";
 
@@ -245,7 +246,7 @@ export default function Transformation({ onOpenJoinModal }: TransformationProps)
             <div className="relative w-full aspect-[3/4] max-w-lg rounded-3xl bg-[#0B0A0E] border border-[#5C4E4E]/50 overflow-hidden shadow-2xl group transition-all duration-500 shadow-[0_0_50px_rgba(229,9,20,0.25)]">
               {/* Active High-Res Photo Asset */}
               <Image
-                src={viewImages[activeView].src}
+                src={getAssetPath(viewImages[activeView].src)}
                 alt={viewImages[activeView].title}
                 fill
                 priority

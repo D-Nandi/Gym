@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { Maximize2, X, Dumbbell } from "lucide-react";
 import { GYM_DATA } from "@/data/gymData";
+import { getAssetPath } from "@/lib/utils";
 
 export default function Gallery() {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -79,7 +80,7 @@ export default function Gallery() {
                 {/* Real Photo Asset */}
                 {item.image ? (
                   <Image
-                    src={item.image}
+                    src={getAssetPath(item.image)}
                     alt={item.title}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -148,7 +149,7 @@ export default function Gallery() {
             <div className="w-full aspect-[16/9] rounded-2xl bg-[#121116] border border-[#5C4E4E]/40 relative overflow-hidden mb-5">
               {lightboxItem.image ? (
                 <Image
-                  src={lightboxItem.image}
+                  src={getAssetPath(lightboxItem.image)}
                   alt={lightboxItem.title}
                   fill
                   sizes="(max-width: 768px) 100vw, 800px"
