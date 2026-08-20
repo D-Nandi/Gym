@@ -1,26 +1,151 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --color-pitch: #000000;
+    --color-abyss: #070709;
+    --color-charcoal: #0E0E12;
+    --color-card: #15151A;
+    --color-card-border: #2A2626;
+    --color-espresso: #5C4E4E;
+    --color-taupe: #988686;
+    --color-silver: #D1D0D0;
+    --color-white: #FFFFFF;
+    --color-crimson: #E50914;
+    --color-crimson-bright: #FF2D3B;
+    --color-crimson-dark: #6E050A;
+  }
+
+  * {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #000000;
+    color: #D1D0D0;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    overflow-x: hidden;
+    selection-background-color: #E50914;
+    selection-color: #FFFFFF;
+  }
+
+  ::selection {
+    background-color: #E50914;
+    color: #FFFFFF;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #5C4E4E;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #E50914;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Atmospheric Glows & Utilities */
+.gothic-gradient-bg {
+  background: radial-gradient(circle at 50% 0%, #201315 0%, #08080a 60%, #000000 100%);
+}
+
+.gothic-card {
+  background: linear-gradient(145deg, rgba(23, 21, 23, 0.9) 0%, rgba(10, 10, 12, 0.95) 100%);
+  border: 1px solid rgba(92, 78, 78, 0.35);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(16px);
+}
+
+.gothic-card-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gothic-card-hover:hover {
+  border-color: rgba(229, 9, 20, 0.6);
+  box-shadow: 0 14px 40px -10px rgba(229, 9, 20, 0.25), 0 0 20px 0 rgba(229, 9, 20, 0.1) inset;
+  transform: translateY(-4px);
+}
+
+.crimson-glow-text {
+  text-shadow: 0 0 35px rgba(229, 9, 20, 0.65), 0 0 15px rgba(255, 45, 59, 0.4);
+}
+
+.silver-metallic-text {
+  background: linear-gradient(180deg, #FFFFFF 0%, #D1D0D0 50%, #988686 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.taupe-metallic-text {
+  background: linear-gradient(180deg, #D1D0D0 0%, #988686 60%, #5C4E4E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.crimson-metallic-button {
+  background: linear-gradient(135deg, #FF2D3B 0%, #E50914 50%, #850B12 100%);
+  box-shadow: 0 0 25px rgba(229, 9, 20, 0.4), 0 4px 15px rgba(0, 0, 0, 0.8);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.crimson-metallic-button:hover {
+  box-shadow: 0 0 35px rgba(255, 45, 59, 0.7), 0 6px 25px rgba(229, 9, 20, 0.5);
+  transform: scale(1.02);
+}
+
+.noir-outline-button {
+  background: rgba(14, 14, 18, 0.6);
+  border: 1px solid #5C4E4E;
+  color: #D1D0D0;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.noir-outline-button:hover {
+  border-color: #D1D0D0;
+  background: rgba(92, 78, 78, 0.3);
+  color: #FFFFFF;
+  transform: scale(1.02);
+}
+
+/* Subtle Film Noise / Grain */
+.noise-overlay {
+  background-image: radial-gradient(rgba(209, 208, 208, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Animation keyframes */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.08);
+  }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
 }
