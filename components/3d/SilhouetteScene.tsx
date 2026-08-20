@@ -5,10 +5,13 @@ import { useFrame } from "@react-three/fiber";
 import { useGLTF, Float, OrbitControls } from "@react-three/drei";
 import * as THREE from "three";
 
+const isProd = typeof window !== "undefined" && window.location.pathname.startsWith("/Gym");
+const modelPath = isProd ? "/Gym/models/male.glb" : "/models/male.glb";
+
 function OriginalHumanModel() {
   const groupRef = useRef<THREE.Group>(null!);
   const auraRingsRef = useRef<THREE.Group>(null!);
-  const { scene } = useGLTF("/models/male.glb");
+  const { scene } = useGLTF(modelPath);
 
   useEffect(() => {
     if (scene) {
@@ -69,7 +72,9 @@ function OriginalHumanModel() {
 }
 
 // Preload the GLTF model for instantaneous rendering
-useGLTF.preload("/models/male.glb");
+if (typeof window !== "undefined") {
+  useGLTF.preload(modelPath);
+}
 
 export default function SilhouetteScene() {
   return (
