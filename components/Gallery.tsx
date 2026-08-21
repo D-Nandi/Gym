@@ -45,7 +45,7 @@ export default function Gallery() {
               <span className="text-[#E50914]">.</span>
             </h2>
             <p className="text-sm sm:text-base text-[#988686]">
-              Explore the training zones, heavy iron stations, and conditioning suites at Peter&apos;s Gym Purulia.
+              Explore the training zones, heavy iron stations, and indoor cycling suite at SM Fitness Purulia.
             </p>
           </div>
 

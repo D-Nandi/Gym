@@ -24,7 +24,7 @@ export default function Location() {
             <span className="text-[#E50914]">.</span>
           </h2>
           <p className="text-sm sm:text-base text-[#988686]">
-            Conveniently situated in the heart of Purulia on S Lake Road near Karbala Ground.
+            Conveniently situated on SC Sen Road, beside Nilkuthidanga Club in Purulia.
           </p>
         </div>
 
@@ -40,7 +40,7 @@ export default function Location() {
                   <MapPin className="w-4 h-4" /> FACILITY ADDRESS
                 </div>
                 <h3 className="text-2xl font-black text-white uppercase tracking-tight">
-                  {GYM_DATA.name}
+                  {GYM_DATA.name} (এসএম ফিটনেস)
                 </h3>
                 <p className="text-sm text-[#D1D0D0] leading-relaxed">
                   {GYM_DATA.contact.address.street} <br />
@@ -56,7 +56,7 @@ export default function Location() {
                     <Clock className="w-4 h-4 text-[#E50914]" /> Standard Timings
                   </span>
                   <span className="px-2 py-0.5 rounded bg-[#25D366]/20 text-[#25D366] text-[10px] font-bold">
-                    Open Daily
+                    Mon – Sat
                   </span>
                 </div>
                 <div className="text-lg font-black text-white">
@@ -89,7 +89,7 @@ export default function Location() {
                   </a>
 
                   <a
-                    href={`https://wa.me/${GYM_DATA.contact.whatsappPhoneRaw}?text=Hi%20Peter's%20Gym,%20I%20would%20like%20to%20know%20more%20about%20gym%20timings%20and%20membership.`}
+                    href={`https://wa.me/${GYM_DATA.contact.whatsappPhoneRaw}?text=Hi%20SM%20Fitness,%20I%20would%20like%20to%20know%20more%20about%20gym%20timings%20and%20membership.`}
                     target="_blank"
                     rel="noreferrer"
                     className="py-3 px-4 rounded-xl bg-[#25D366]/20 border border-[#25D366]/40 text-[#25D366] text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 text-center hover:bg-[#25D366]/30 transition"
@@ -107,8 +107,8 @@ export default function Location() {
           <div className="lg:col-span-7">
             <div className="w-full aspect-[4/3] rounded-3xl gothic-card border border-[#5C4E4E]/40 overflow-hidden relative shadow-2xl p-2">
               <iframe
-                title="Peter's Gym Purulia Location Map"
-                src="https://maps.google.com/maps?q=23.3322,86.3652&hl=en&z=15&output=embed"
+                title="SM Fitness Purulia Location Map"
+                src="https://maps.google.com/maps?q=23.3320,86.3685&hl=en&z=15&output=embed"
                 className="w-full h-full rounded-2xl border-0 filter grayscale invert contrast-125 opacity-85"
                 loading="lazy"
                 allowFullScreen
@@ -120,8 +120,8 @@ export default function Location() {
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="font-bold text-white text-xs uppercase">PETER&apos;S GYM</div>
-                  <div className="text-[11px] text-[#988686]">S Lake Road, Purulia</div>
+                  <div className="font-bold text-white text-xs uppercase">SM FITNESS</div>
+                  <div className="text-[11px] text-[#988686]">SC Sen Road, Purulia</div>
                 </div>
               </div>
             </div>

@@ -52,10 +52,10 @@ export default function Hero({ onOpenJoinModal }: HeroProps) {
         <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#151419]/90 border border-[#5C4E4E]/60 text-[#D1D0D0] text-xs font-semibold tracking-wider uppercase mb-6 backdrop-blur-md shadow-xl">
           <span className="flex items-center gap-1 text-[#FFD700]">
             <Star className="w-3.5 h-3.5 fill-[#FFD700]" />
-            <span className="font-bold text-white">4.7</span>
+            <span className="font-bold text-white">4.9</span>
           </span>
           <span className="text-[#5C4E4E]">|</span>
-          <span className="text-[#988686]">337+ Verified Reviews</span>
+          <span className="text-[#988686]">131+ Verified Reviews</span>
           <span className="text-[#5C4E4E]">|</span>
           <span className="flex items-center gap-1 text-[#E50914]">
             <MapPin className="w-3.5 h-3.5" /> Purulia
@@ -64,7 +64,7 @@ export default function Hero({ onOpenJoinModal }: HeroProps) {
 
         {/* Brand Headline */}
         <p className="text-xs sm:text-sm md:text-base font-extrabold tracking-[0.35em] text-[#988686] uppercase mb-2">
-          {GYM_DATA.name}
+          {GYM_DATA.name} (এসএম ফিটনেস)
         </p>
 
         <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight text-white uppercase leading-[0.95] max-w-5xl mb-6">
@@ -75,7 +75,7 @@ export default function Hero({ onOpenJoinModal }: HeroProps) {
 
         {/* Supporting Motto */}
         <p className="text-base sm:text-xl md:text-2xl font-medium text-[#D1D0D0] max-w-2xl mx-auto tracking-wide mb-8">
-          Strength. <span className="text-[#988686]">Discipline.</span> <span className="text-[#E50914] font-semibold">Performance.</span>
+          Weight Training. <span className="text-[#988686]">Indoor Cycling.</span> <span className="text-[#E50914] font-semibold">Bodybuilding.</span>
         </p>
 
         {/* Action Buttons */}
@@ -99,23 +99,23 @@ export default function Hero({ onOpenJoinModal }: HeroProps) {
         {/* Highlight Stats Strip */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 w-full max-w-4xl pt-4 border-t border-[#5C4E4E]/30">
           <div className="p-3.5 sm:p-4 rounded-xl bg-[#121115]/80 border border-[#5C4E4E]/30 backdrop-blur-md text-center">
-            <div className="text-xl sm:text-2xl font-black text-white">4.7★</div>
+            <div className="text-xl sm:text-2xl font-black text-white">4.9★</div>
             <div className="text-[11px] sm:text-xs font-semibold text-[#988686] uppercase tracking-wider mt-0.5">
-              337+ Google Reviews
+              131+ Google Reviews
             </div>
           </div>
 
           <div className="p-3.5 sm:p-4 rounded-xl bg-[#121115]/80 border border-[#5C4E4E]/30 backdrop-blur-md text-center">
-            <div className="text-xl sm:text-2xl font-black text-white">2022</div>
+            <div className="text-xl sm:text-2xl font-black text-white">3+ Yrs</div>
             <div className="text-[11px] sm:text-xs font-semibold text-[#988686] uppercase tracking-wider mt-0.5">
-              Established
+              In Business
             </div>
           </div>
 
           <div className="p-3.5 sm:p-4 rounded-xl bg-[#121115]/80 border border-[#5C4E4E]/30 backdrop-blur-md text-center">
             <div className="text-xl sm:text-2xl font-black text-white">6 AM – 10 PM</div>
             <div className="text-[11px] sm:text-xs font-semibold text-[#988686] uppercase tracking-wider mt-0.5">
-              Open Daily*
+              Mon – Sat Access
             </div>
           </div>
 
@@ -124,7 +124,7 @@ export default function Hero({ onOpenJoinModal }: HeroProps) {
               <Flame className="w-5 h-5" /> 100%
             </div>
             <div className="text-[11px] sm:text-xs font-semibold text-[#988686] uppercase tracking-wider mt-0.5">
-              Heavy Duty Iron
+              Cycling & Heavy Iron
             </div>
           </div>
         </div>

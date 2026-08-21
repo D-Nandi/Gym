@@ -36,7 +36,7 @@ export default function About({ onOpenJoinModal }: AboutProps) {
           <div className="lg:col-span-7 space-y-6">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1A181C] border border-[#5C4E4E]/40 text-xs font-bold tracking-widest uppercase text-[#D1D0D0]">
               <span className="w-2 h-2 rounded-full bg-[#E50914]" />
-              ABOUT PETER&apos;S GYM
+              ABOUT SM FITNESS
             </div>
 
             <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white uppercase tracking-tight leading-[1.05]">
@@ -46,7 +46,7 @@ export default function About({ onOpenJoinModal }: AboutProps) {
             </h2>
 
             <p className="text-base sm:text-lg text-[#D1D0D0] leading-relaxed max-w-2xl font-normal">
-              Located on <strong className="text-white">S Lake Road in Purulia</strong>, Peter&apos;s Gym is engineered for athletes, fitness enthusiasts, and everyday lifters striving for real physical transformations. No fluff, no distractions—just commercial-grade iron, expert coaching, and a driven community.
+              Located on <strong className="text-white">SC Sen Road in Nilkuthidanga, Purulia</strong> (beside Nilkuthidanga Club), SM Fitness is engineered for athletes, fitness enthusiasts, and everyday lifters striving for real physical transformations. No fluff, no distractions—just commercial-grade weight training, indoor cycling, attentive coaching, and an energetic community.
             </p>
 
             {/* Core Values Bullet Points */}
@@ -54,32 +54,32 @@ export default function About({ onOpenJoinModal }: AboutProps) {
               <div className="flex items-start gap-3 p-3 rounded-xl bg-[#0E0E12] border border-[#5C4E4E]/30">
                 <CheckCircle2 className="w-5 h-5 text-[#E50914] shrink-0 mt-0.5" />
                 <div>
-                  <div className="text-sm font-bold text-white uppercase">Commercial Grade Equipment</div>
-                  <div className="text-xs text-[#988686]">Heavy power racks, cables & free weights</div>
+                  <div className="text-sm font-bold text-white uppercase">Weight Training & Free Weights</div>
+                  <div className="text-xs text-[#988686]">Heavy dumbbells, Olympic bars & benches</div>
                 </div>
               </div>
 
               <div className="flex items-start gap-3 p-3 rounded-xl bg-[#0E0E12] border border-[#5C4E4E]/30">
                 <CheckCircle2 className="w-5 h-5 text-[#E50914] shrink-0 mt-0.5" />
                 <div>
-                  <div className="text-sm font-bold text-white uppercase">Certified Guidance</div>
-                  <div className="text-xs text-[#988686]">Focused 1-on-1 personal coaching</div>
+                  <div className="text-sm font-bold text-white uppercase">Indoor Cycling Suite</div>
+                  <div className="text-xs text-[#988686]">High-resistance cardio & spin cycles</div>
                 </div>
               </div>
 
               <div className="flex items-start gap-3 p-3 rounded-xl bg-[#0E0E12] border border-[#5C4E4E]/30">
                 <CheckCircle2 className="w-5 h-5 text-[#E50914] shrink-0 mt-0.5" />
                 <div>
-                  <div className="text-sm font-bold text-white uppercase">Clean, A/C Facility</div>
-                  <div className="text-xs text-[#988686]">Hygienic floor, lockers & steam bath</div>
+                  <div className="text-sm font-bold text-white uppercase">Attentive Trainer Coaching</div>
+                  <div className="text-xs text-[#988686]">Posture critique & personalized routines</div>
                 </div>
               </div>
 
               <div className="flex items-start gap-3 p-3 rounded-xl bg-[#0E0E12] border border-[#5C4E4E]/30">
                 <CheckCircle2 className="w-5 h-5 text-[#E50914] shrink-0 mt-0.5" />
                 <div>
-                  <div className="text-sm font-bold text-white uppercase">Flexible Hours</div>
-                  <div className="text-xs text-[#988686]">Open 6 AM to 10 PM daily</div>
+                  <div className="text-sm font-bold text-white uppercase">Vibrant A/C Atmosphere</div>
+                  <div className="text-xs text-[#988686]">Rubber floor, mirrors & energetic vibe</div>
                 </div>
               </div>
             </div>
@@ -88,20 +88,20 @@ export default function About({ onOpenJoinModal }: AboutProps) {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-4">
               <div className="p-4 rounded-xl gothic-card text-left">
                 <div className="flex items-center gap-1 text-[#FFD700] text-xl sm:text-2xl font-black">
-                  <Star className="w-5 h-5 fill-[#FFD700]" /> 4.7★
+                  <Star className="w-5 h-5 fill-[#FFD700]" /> 4.9★
                 </div>
                 <div className="text-[11px] font-bold text-[#D1D0D0] uppercase tracking-wider mt-1">
-                  337+ Reviews
+                  131+ Reviews
                 </div>
                 <div className="text-[10px] text-[#988686]">Google Verified</div>
               </div>
 
               <div className="p-4 rounded-xl gothic-card text-left">
                 <div className="text-xl sm:text-2xl font-black text-white flex items-center gap-1">
-                  <Calendar className="w-4 h-4 text-[#E50914]" /> 2022
+                  <Calendar className="w-4 h-4 text-[#E50914]" /> 3+ Yrs
                 </div>
                 <div className="text-[11px] font-bold text-[#D1D0D0] uppercase tracking-wider mt-1">
-                  Established
+                  In Business
                 </div>
                 <div className="text-[10px] text-[#988686]">Purulia Landmark</div>
               </div>
@@ -111,7 +111,7 @@ export default function About({ onOpenJoinModal }: AboutProps) {
                   <Clock className="w-4 h-4 text-[#E50914]" /> 6 AM–10 PM
                 </div>
                 <div className="text-[11px] font-bold text-[#D1D0D0] uppercase tracking-wider mt-1">
-                  Open Daily*
+                  Mon – Sat
                 </div>
                 <div className="text-[10px] text-[#988686]">Morning to Night</div>
               </div>
@@ -133,7 +133,7 @@ export default function About({ onOpenJoinModal }: AboutProps) {
                 href={`tel:${GYM_DATA.contact.primaryPhoneRaw}`}
                 className="w-full sm:w-auto py-3.5 px-6 rounded-xl noir-outline-button text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 text-center"
               >
-                <Phone className="w-4 h-4 text-[#E50914]" /> Call +91 98836 88247
+                <Phone className="w-4 h-4 text-[#E50914]" /> Call {GYM_DATA.contact.primaryPhone}
               </a>
             </div>
           </div>
@@ -163,7 +163,7 @@ export default function About({ onOpenJoinModal }: AboutProps) {
                   <div className="text-[11px] text-[#988686]">Heavy-duty cast iron hex heads</div>
                 </div>
                 <span className="px-2.5 py-1 rounded bg-[#E50914]/20 border border-[#E50914]/40 text-[#FF2D3B] text-[10px] font-black uppercase">
-                  PETER&apos;S IRON
+                  SM FITNESS IRON
                 </span>
               </div>
             </div>

@@ -31,26 +31,27 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Peter's Gym | Premium Fitness & Strength Training in Purulia",
+  title: "SM Fitness | Premier Gym & Weight Training in Purulia (4.9★)",
   description:
-    "Peter's Gym in Purulia, West Bengal — 4.7★ rated premier fitness hub. Strength training, personal coaching, cardio conditioning, cross-training, aerobics & yoga on S Lake Road.",
+    "SM Fitness (এসএম ফিটনেস) on SC Sen Road, Purulia — 4.9★ rated premier fitness club with 131+ verified reviews. Heavy weight training, indoor cycling, bodybuilding, personal training & fat loss.",
   keywords: [
-    "Peter's Gym",
+    "SM Fitness",
+    "SM Fitness Purulia",
     "Gym in Purulia",
     "Purulia Gym",
-    "Fitness center Purulia",
-    "S Lake Road Purulia Gym",
-    "Strength training Purulia",
-    "Personal training Purulia",
+    "SC Sen Road Gym Purulia",
+    "Nilkuthidanga Gym",
+    "Weight training Purulia",
+    "Indoor cycling Purulia",
     "Best gym in Purulia",
   ],
-  authors: [{ name: "Peter's Gym" }],
+  authors: [{ name: "SM Fitness" }],
   openGraph: {
-    title: "Peter's Gym | Premium Fitness & Strength Training in Purulia",
+    title: "SM Fitness | Premier Gym & Weight Training in Purulia",
     description:
-      "Forge your best self at Peter's Gym. 4.7★ Google Rating (337+ reviews). Heavy strength equipment, personal training, steam bath & cardio in Purulia.",
-    url: "https://petersgym.in",
-    siteName: "Peter's Gym",
+      "Transform your physique at SM Fitness Purulia. 4.9★ Google Rating (131+ reviews). Commercial weight training, indoor cycling, and certified fitness guidance.",
+    url: "https://smfitnesspurulia.in",
+    siteName: "SM Fitness Purulia",
     locale: "en_IN",
     type: "website",
   },
@@ -71,7 +72,7 @@ export default function RootLayout({
     name: GYM_DATA.name,
     legalName: GYM_DATA.legalName,
     description:
-      "Premier fitness and strength training facility in Purulia offering commercial strength equipment, personal coaching, cardio conditioning, aerobics, and yoga.",
+      "Premier fitness and strength facility in Purulia offering commercial weight training equipment, indoor cycling suites, personal coaching, and bodybuilding transformation programs.",
     telephone: GYM_DATA.contact.primaryPhone,
     address: {
       "@type": "PostalAddress",
@@ -88,8 +89,8 @@ export default function RootLayout({
     },
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "4.7",
-      reviewCount: "337",
+      ratingValue: "4.9",
+      reviewCount: "131",
       bestRating: "5",
       worstRating: "1",
     },
@@ -103,7 +104,6 @@ export default function RootLayout({
           "Thursday",
           "Friday",
           "Saturday",
-          "Sunday",
         ],
         opens: "06:00",
         closes: "22:00",

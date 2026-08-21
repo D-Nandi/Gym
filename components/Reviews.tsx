@@ -27,7 +27,7 @@ export default function Reviews() {
 
               <div className="flex items-center justify-center lg:justify-start gap-4">
                 <div className="text-6xl sm:text-7xl font-black text-white font-serif">
-                  4.7
+                  4.9
                 </div>
                 <div className="space-y-1 text-left">
                   <div className="flex items-center gap-1 text-[#FFD700]">
@@ -39,7 +39,7 @@ export default function Reviews() {
                     OUT OF 5.0 STARS
                   </div>
                   <div className="text-xs font-mono text-[#988686]">
-                    337+ Verified Reviews
+                    131+ Verified Reviews
                   </div>
                 </div>
               </div>
@@ -48,10 +48,10 @@ export default function Reviews() {
             {/* Description & Google Link */}
             <div className="lg:col-span-7 space-y-4 border-t lg:border-t-0 lg:border-l border-[#5C4E4E]/30 pt-6 lg:pt-0 lg:pl-8">
               <h3 className="text-xl sm:text-2xl font-black text-white uppercase tracking-tight">
-                TOP RATED FITNESS HUB IN PURULIA
+                TOP RATED FITNESS & WEIGHT TRAINING HUB IN PURULIA
               </h3>
               <p className="text-sm text-[#D1D0D0] leading-relaxed">
-                Trusted by 330+ athletes, bodybuilders, and fitness seekers across Purulia for our top-tier machines, supportive training atmosphere, and clean environment.
+                Trusted by 130+ athletes, bodybuilders, and fitness seekers across Purulia for our top-tier machines, dedicated cycling & weight training floor, supportive atmosphere, and clean environment.
               </p>
               <div className="pt-2 flex flex-wrap items-center gap-3">
                 <a

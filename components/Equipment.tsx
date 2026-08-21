@@ -105,7 +105,7 @@ export default function Equipment() {
                   <Layers className="w-4 h-4 text-[#E50914]" />
                   <span className="text-white font-bold">{currentCategory.subtitle}</span>
                 </div>
-                <span className="text-[10px] text-[#988686] font-mono">PETER&apos;S SPECS</span>
+                <span className="text-[10px] text-[#988686] font-mono">SM FITNESS SPECS</span>
               </div>
             </div>
           </div>

@@ -395,7 +395,7 @@ export default function Transformation({ onOpenJoinModal }: TransformationProps)
             <div className="space-y-3">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1A181C] border border-[#5C4E4E]/40 text-xs font-bold tracking-widest uppercase text-[#D1D0D0]">
                 <span className="w-2 h-2 rounded-full bg-[#E50914]" />
-                THE PETER&apos;S STANDARD
+                THE SM FITNESS STANDARD
               </div>
               <h3 className="text-2xl sm:text-4xl font-black text-white uppercase tracking-tight leading-[1.05]">
                 BUILT WITH <br />

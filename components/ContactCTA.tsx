@@ -33,7 +33,7 @@ export default function ContactCTA({ onOpenJoinModal }: ContactCTAProps) {
         </h2>
 
         <p className="text-base sm:text-xl text-[#D1D0D0] max-w-2xl mx-auto font-normal">
-          The best time to build your strongest physique is now. Visit our facility on S Lake Road, Purulia or contact us directly.
+          The best time to build your strongest physique is now. Visit our facility on SC Sen Road (Beside Nilkuthidanga Club), Purulia or contact us directly.
         </p>
 
         {/* Big Action Buttons */}
@@ -43,7 +43,7 @@ export default function ContactCTA({ onOpenJoinModal }: ContactCTAProps) {
             className="w-full sm:w-auto py-4 px-9 rounded-xl crimson-metallic-button font-extrabold text-white tracking-wider uppercase text-sm flex items-center justify-center gap-2 cursor-pointer group"
           >
             <Sparkles className="w-4 h-4" />
-            <span>JOIN PETER&apos;S GYM</span>
+            <span>JOIN SM FITNESS</span>
           </button>
 
           <a

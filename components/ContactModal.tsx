@@ -46,7 +46,7 @@ export default function ContactModal({
 
   const handleWhatsAppRedirect = () => {
     const text = encodeURIComponent(
-      `Hello Peter's Gym, I am interested in ${formData.service || initialService}. My name is ${formData.name || "a prospective member"}. Could you please share details on membership and timings?`
+      `Hello SM Fitness, I am interested in ${formData.service || initialService}. My name is ${formData.name || "a prospective member"}. Could you please share details on membership and timings?`
     );
     window.open(`https://wa.me/${GYM_DATA.contact.whatsappPhoneRaw}?text=${text}`, "_blank");
   };
@@ -73,10 +73,10 @@ export default function ContactModal({
                 <Sparkles className="w-3.5 h-3.5" /> Start Training Today
               </div>
               <h3 className="text-2xl md:text-3xl font-extrabold text-white tracking-tight">
-                JOIN <span className="text-[#E50914]">PETER&apos;S GYM</span>
+                JOIN <span className="text-[#E50914]">SM FITNESS</span>
               </h3>
               <p className="text-sm text-[#988686] mt-1">
-                S Lake Road, Purulia • 4.7★ Rating (337+ Reviews)
+                SC Sen Road, Purulia • 4.9★ Rating (131+ Reviews)
               </p>
             </div>
 
@@ -126,12 +126,11 @@ export default function ContactModal({
                     className="w-full px-3 py-3 rounded-lg bg-[#0E0E12] border border-[#5C4E4E]/40 text-[#D1D0D0] focus:outline-none focus:border-[#E50914] transition text-sm"
                   >
                     <option value="General Membership">General Gym Membership</option>
-                    <option value="Strength Training">Strength & Weightlifting</option>
-                    <option value="Personal Training">Personal Coaching</option>
-                    <option value="Cardio & Conditioning">Cardio & Conditioning</option>
-                    <option value="Cross Training">Cross Training</option>
-                    <option value="Aerobics">Aerobics</option>
-                    <option value="Yoga">Yoga & Mobility</option>
+                    <option value="Weight Training">Weight Training & Free Weights</option>
+                    <option value="Indoor Cycling">Indoor Cycling & Spin</option>
+                    <option value="Personal Coaching">1-on-1 Personal Coaching</option>
+                    <option value="Bodybuilding">Bodybuilding & Hypertrophy</option>
+                    <option value="Weight Loss & Diet">Weight Loss & Diet Program</option>
                   </select>
                 </div>
 
@@ -176,7 +175,7 @@ export default function ContactModal({
                 <Phone className="w-3.5 h-3.5 text-[#E50914]" /> {GYM_DATA.contact.primaryPhone}
               </span>
               <span className="flex items-center gap-1">
-                <MapPin className="w-3.5 h-3.5 text-[#E50914]" /> S Lake Road, Purulia
+                <MapPin className="w-3.5 h-3.5 text-[#E50914]" /> SC Sen Road, Purulia
               </span>
             </div>
           </>
@@ -187,7 +186,7 @@ export default function ContactModal({
             </div>
             <h3 className="text-2xl font-bold text-white">Inquiry Received!</h3>
             <p className="text-sm text-[#988686] max-w-sm mx-auto">
-              Thank you, <span className="text-white font-medium">{formData.name}</span>. You can visit us directly at <span className="text-[#D1D0D0]">S Lake Road, Purulia</span> or connect instantly via WhatsApp or Call.
+              Thank you, <span className="text-white font-medium">{formData.name}</span>. You can visit us directly at <span className="text-[#D1D0D0]">SC Sen Road (Beside Nilkuthidanga Club), Purulia</span> or connect instantly via WhatsApp or Call.
             </p>
 
             <div className="pt-4 flex flex-col sm:flex-row gap-3 justify-center">

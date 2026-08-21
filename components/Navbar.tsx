@@ -56,17 +56,17 @@ export default function Navbar({ onOpenJoinModal }: NavbarProps) {
           <a
             href="#hero"
             className="flex items-center gap-3 group focus:outline-none"
-            aria-label="Peter's Gym Home"
+            aria-label="SM Fitness Home"
           >
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#1F1E24] to-[#0A0A0C] border border-[#5C4E4E]/50 flex items-center justify-center text-[#E50914] group-hover:border-[#E50914] transition-all shadow-lg">
               <Dumbbell className="w-5 h-5 group-hover:rotate-45 transition-transform duration-300" />
             </div>
             <div className="flex flex-col">
               <span className="font-extrabold tracking-wider text-xl sm:text-2xl text-white font-serif uppercase">
-                PETER&apos;S <span className="text-[#E50914]">GYM</span>
+                SM <span className="text-[#E50914]">FITNESS</span>
               </span>
               <span className="text-[10px] tracking-widest text-[#988686] uppercase font-semibold">
-                Purulia • 4.7★
+                Purulia • 4.9★
               </span>
             </div>
           </a>
@@ -102,7 +102,7 @@ export default function Navbar({ onOpenJoinModal }: NavbarProps) {
             <a
               href={`tel:${GYM_DATA.contact.primaryPhoneRaw}`}
               className="p-2.5 rounded-xl noir-outline-button text-xs font-semibold flex items-center gap-1.5"
-              title="Call Peter's Gym"
+              title="Call SM Fitness"
             >
               <Phone className="w-4 h-4 text-[#E50914]" />
               <span className="hidden md:inline">{GYM_DATA.contact.primaryPhone}</span>
@@ -152,7 +152,7 @@ export default function Navbar({ onOpenJoinModal }: NavbarProps) {
                   {isOpenNow ? "Open Now • 6 AM – 10 PM" : "Opens Tomorrow 6 AM"}
                 </span>
               </div>
-              <span className="text-xs text-[#988686]">4.7★ (337+ Reviews)</span>
+              <span className="text-xs text-[#988686]">4.9★ (131+ Reviews)</span>
             </div>
 
             <nav className="flex flex-col space-y-3 pt-2">
@@ -177,7 +177,7 @@ export default function Navbar({ onOpenJoinModal }: NavbarProps) {
               }}
               className="w-full py-3.5 rounded-xl crimson-metallic-button font-bold text-white tracking-wider uppercase text-sm flex items-center justify-center gap-2 cursor-pointer"
             >
-              <Sparkles className="w-4 h-4" /> JOIN PETER&apos;S GYM
+              <Sparkles className="w-4 h-4" /> JOIN SM FITNESS
             </button>
 
             <div className="grid grid-cols-2 gap-3">
